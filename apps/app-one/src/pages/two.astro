@@ -1,0 +1,11 @@
+---
+import Layout from "../Layout.astro"
+import { App } from "../App.tsx"
+import outputs from "backend-two/outputs"
+
+const title = "app-two"
+---
+
+<Layout title={title}>
+  <App client:load outputs={outputs} title={title} />
+</Layout>
